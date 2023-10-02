@@ -1,19 +1,22 @@
-public class StackImpl<T> implements Stack<Integer> {
-    public StackImpl(T i) {
+public class StackImpl<T> implements Stack<T> {
+
+    T[] data;
+    public StackImpl(int i) {
+        this.data = (T[])new Object[i];
     }
 
     @Override
-    public void push(Integer integer) throws FullStackException {
+    public void push(T value) throws FullStackException {
 
     }
 
     @Override
-    public Integer pop() throws EmptyStackException {
+    public T pop() throws EmptyStackException {
         return null;
     }
 
     @Override
-    public Integer peek() {
+    public T peek() {
         return null;
     }
 
